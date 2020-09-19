@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26373368add37ea43b557089b0f7b0da, type: 3}
+  m_Name: Camera Holder Y Rotation
+  m_EditorClassIdentifier: 
+  inputAxis: {fileID: 11400000, guid: e9a9d023942eaa84caa362ad143c2468, type: 2}
+  targetTransform: {fileID: 11400000, guid: c522a61c807dc1c4388ac42db477e2a3, type: 2}
+  angle: -222.29988
+  speed: 9
+  targetAxis: 1
+  inverse: 0
+  clamp: 0
+  maxClamp: 35
+  minClamp: -35

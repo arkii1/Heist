@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ab6ca61420018458fc94c090438cfb, type: 3}
+  m_Name: Shotgun Shooting
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: ff483d5819ae5644197350aa7a21b1c7, type: 3}
+  - {fileID: 8300000, guid: d2c28eca77cfa9b41af123c53726bf32, type: 3}
+  - {fileID: 8300000, guid: 87ac8d66eac7df0459afd97fcf6a9227, type: 3}
+  - {fileID: 8300000, guid: 72952af8e4c0279498a35b19c444f78d, type: 3}
+  minPitch: 1
+  maxPitch: 1

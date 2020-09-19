@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd3a852bbbd5ed47b8514787a600861, type: 3}
+  m_Name: AIManager
+  m_EditorClassIdentifier: 
+  keyAreas:
+  - guardsAssigned: 3
+    transform: {fileID: 11400000, guid: fc089ffb4895e1449adfda786dca9024, type: 2}
+  - guardsAssigned: 2
+    transform: {fileID: 11400000, guid: ba2e8da446c13dc4099362cf351f79ec, type: 2}
+  - guardsAssigned: 2
+    transform: {fileID: 11400000, guid: cdf379e41859fd042b84fcccf9c2267f, type: 2}
+  - guardsAssigned: 2
+    transform: {fileID: 11400000, guid: 2b83deb8ea23bd7499dfa926c23c66b5, type: 2}
+  - guardsAssigned: 2
+    transform: {fileID: 11400000, guid: 0be50a7853fa9fa4b81117fbfecc6e64, type: 2}
+  guards:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

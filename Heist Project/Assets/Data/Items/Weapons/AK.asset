@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 260cbfc7716cfbd4bbdb9dea8c7c8219, type: 3}
+  m_Name: AK
+  m_EditorClassIdentifier: 
+  magazineBullets: 30
+  fireRate: 0.1
+  isAutomatic: 1
+  ammoType: {fileID: 11400000, guid: c434da6294fd2944498a814672588994, type: 2}
+  rhAimingPosition: {fileID: 11400000, guid: 5f76ec2cf9b69e54cb7dcda6e081e2eb, type: 2}
+  rhAimingRotation: {fileID: 11400000, guid: 16daf4f1de215774dbc1fa5507dba86e, type: 2}
+  rhHipfirePosition: {fileID: 11400000, guid: 515f88f915029fe4785781590fedea05, type: 2}
+  rhHipfireRotation: {fileID: 11400000, guid: 6c12debc0a7ad734a8a966f24b8d0c1a, type: 2}
+  weaponModelPosOffset: {fileID: 11400000, guid: e6deb132ce4213042905292871af2547,
+    type: 2}
+  weaponModelRotOffset: {fileID: 11400000, guid: d6fac1df61524684e868a27294152973,
+    type: 2}
+  shootingAudio: {fileID: 11400000, guid: 9704e3eadab3f5b439ea67f09c2de4ca, type: 2}
+  reloadingAudio: {fileID: 11400000, guid: 42f5b265e5f596147b66459f300224ed, type: 2}
+  model: {fileID: 3259136311834701535, guid: 389be319e85b727419443e363c3bf36a, type: 3}
+  ballistics: {fileID: 11400000, guid: 27bdc14d2a1810942ba00be8d56f60cb, type: 2}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 260cbfc7716cfbd4bbdb9dea8c7c8219, type: 3}
+  m_Name: Shotgun
+  m_EditorClassIdentifier: 
+  magazineBullets: 12
+  fireRate: 0.6
+  isAutomatic: 0
+  ammoType: {fileID: 11400000, guid: 6a779e327606b3043aeb61c70c580de7, type: 2}
+  rhAimingPosition: {fileID: 11400000, guid: 66be118ae5d3ffc4b9a175efa0737272, type: 2}
+  rhAimingRotation: {fileID: 11400000, guid: 58162fa9a59ed2e419486dd1925933ec, type: 2}
+  rhHipfirePosition: {fileID: 11400000, guid: 42d6489dce5198547b91327399f8038c, type: 2}
+  rhHipfireRotation: {fileID: 11400000, guid: 66f4e1bfe5cbb58478228af3603fc2c0, type: 2}
+  weaponModelPosOffset: {fileID: 11400000, guid: e6deb132ce4213042905292871af2547,
+    type: 2}
+  weaponModelRotOffset: {fileID: 11400000, guid: d6fac1df61524684e868a27294152973,
+    type: 2}
+  shootingAudio: {fileID: 11400000, guid: 0b265123795bb004794f809125e9b8a0, type: 2}
+  reloadingAudio: {fileID: 11400000, guid: 42f5b265e5f596147b66459f300224ed, type: 2}
+  model: {fileID: 3602116056172024938, guid: 9578a18127d61ab4c97425ea50f31143, type: 3}
+  ballistics: {fileID: 11400000, guid: f25f7ef5c755ab84b9e32fbef85ca9e4, type: 2}

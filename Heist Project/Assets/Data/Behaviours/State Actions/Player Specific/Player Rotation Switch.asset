@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dca18e3281c28d408de8f2c92b165c1, type: 3}
+  m_Name: Player Rotation Switch
+  m_EditorClassIdentifier: 
+  targetBool: {fileID: 11400000, guid: 8f9b25053ae5824449803f20e1cd1c54, type: 2}
+  trueAction: {fileID: 11400000, guid: b68ac42951c983e488c4038ce5971f59, type: 2}
+  falseAction: {fileID: 11400000, guid: fa06e703e300aa84ea22d1749878ca9d, type: 2}

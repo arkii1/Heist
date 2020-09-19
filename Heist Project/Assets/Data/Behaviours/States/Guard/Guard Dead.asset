@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09f12a9b8fb5e44eb81fa499afbecc4, type: 3}
+  m_Name: Guard Dead
+  m_EditorClassIdentifier: 
+  onFixed: []
+  onUpdate:
+  - {fileID: 11400000, guid: b51dbb606c40f564abd985fb09af3db4, type: 2}
+  - {fileID: 11400000, guid: 534c3e500558ebd4cbed5d021b01f7ce, type: 2}
+  onEnter:
+  - {fileID: 11400000, guid: 534c3e500558ebd4cbed5d021b01f7ce, type: 2}
+  - {fileID: 11400000, guid: 6b689ecc2c6ead74fb76b28614727b96, type: 2}
+  - {fileID: 11400000, guid: ae9b95ae553711947bbc0ab08f4d0259, type: 2}
+  onExit: []
+  idCount: 0
+  transitions: []

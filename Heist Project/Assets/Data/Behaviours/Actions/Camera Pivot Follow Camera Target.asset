@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab1d16fe12b1df94d8d90e4b261bfb98, type: 3}
+  m_Name: Camera Pivot Follow Camera Target
+  m_EditorClassIdentifier: 
+  currentTransform: {fileID: 11400000, guid: 6a305fa364a5b874086b75aac76e41e6, type: 2}
+  targetTransform: {fileID: 11400000, guid: bbf4ef7cee4d13c43b5982c0555a3eaa, type: 2}
+  offsetPosition: {fileID: 0}
+  followSpeed: 15

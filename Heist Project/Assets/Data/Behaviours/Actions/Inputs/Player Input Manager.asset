@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e845a44893fcca249a3bb9c39da15751, type: 3}
+  m_Name: Player Input Manager
+  m_EditorClassIdentifier: 
+  horizontal: {fileID: 11400000, guid: 7a0ca3ff96a04a5438bc22724249218a, type: 2}
+  vertical: {fileID: 11400000, guid: b51f19776b40e2643bd502aed6a3ed27, type: 2}
+  isAiming: {fileID: 11400000, guid: 86b2219878ad0fd46b2bb81df31fd3dc, type: 2}
+  wantsToShoot: {fileID: 11400000, guid: ca186b0ffc50655439285bc4d648efc5, type: 2}
+  wantsToReload: {fileID: 11400000, guid: 1a678af274955d54b82c3f25ba91b98e, type: 2}
+  wantsToRoll: {fileID: 11400000, guid: 5fe4b394b2fa260418fc056aa4232464, type: 2}
+  wantsToThrowGrenade: {fileID: 11400000, guid: 11ec03b865c65f847ae9514dc8a712fa,
+    type: 2}
+  isSprinting: {fileID: 11400000, guid: 8f9b25053ae5824449803f20e1cd1c54, type: 2}
+  isCrouching: {fileID: 11400000, guid: bd3ffe915852d7747beabfda616f17d0, type: 2}
+  wantsToInteract: {fileID: 11400000, guid: ab8722c7607486a47aaa3f8cea2da863, type: 2}
+  isInteracting: {fileID: 11400000, guid: 20671c7c288ab554b8e4ff2efe80c218, type: 2}
+  isPerformingAction: {fileID: 11400000, guid: 6c8167911e71e8a458b5e15cf4e73088, type: 2}
+  sheatheWeapon: {fileID: 11400000, guid: 05d63e5c043c03842aae3444f57c980b, type: 2}
+  mainCameraTransform: {fileID: 11400000, guid: bbd0967f2c826fa4b9ab5c42c2c9a5b2,
+    type: 2}
+  cameraPivotTransform: {fileID: 11400000, guid: 6a305fa364a5b874086b75aac76e41e6,
+    type: 2}
+  playerStates: {fileID: 11400000, guid: 622b991fff3237244b7b3e6a5e7661c8, type: 2}
+  moveAmount: 0
+  moveDirection: {x: 0, y: 0, z: -0}
+  debugAim: 0

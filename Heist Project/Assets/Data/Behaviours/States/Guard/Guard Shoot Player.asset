@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09f12a9b8fb5e44eb81fa499afbecc4, type: 3}
+  m_Name: Guard Shoot Player
+  m_EditorClassIdentifier: 
+  onFixed:
+  - {fileID: 11400000, guid: c39fb56e256a8754997e4590b3ce0ce1, type: 2}
+  onUpdate: []
+  onEnter:
+  - {fileID: 11400000, guid: 534c3e500558ebd4cbed5d021b01f7ce, type: 2}
+  - {fileID: 11400000, guid: 4de279582475e0241bac959552871044, type: 2}
+  - {fileID: 11400000, guid: d49c746e878ce374ea5bc4f962f8210e, type: 2}
+  - {fileID: 11400000, guid: 895cbfbf231048440a5f3a6ead6d4fca, type: 2}
+  onExit: []
+  idCount: 5
+  transitions:
+  - id: 3
+    condition: {fileID: 11400000, guid: f06d0bc41a9210949bf57e71d30ee75e, type: 2}
+    targetState: {fileID: 11400000, guid: e8d83c26f41e3734691c24e7126c285a, type: 2}
+    disable: 0
+  - id: 4
+    condition: {fileID: 11400000, guid: 47e639aeaa32530478e193fe63a8a8dc, type: 2}
+    targetState: {fileID: 11400000, guid: c3eaaec8ef2a43049a7cf09f51f97227, type: 2}
+    disable: 0
