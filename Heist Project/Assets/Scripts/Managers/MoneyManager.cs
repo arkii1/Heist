@@ -9,7 +9,7 @@ namespace SP
     {
         public int currentMonies = 0;
 
-        private void OnEnable()
+        public void Init()
         {
             currentMonies = 0;
         }

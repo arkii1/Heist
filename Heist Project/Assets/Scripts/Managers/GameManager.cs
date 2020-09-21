@@ -36,6 +36,7 @@ namespace SP
             if(aIManager == null)
             {
                 aIManager = Resources.Load("AIManager") as AIManager;
+                aIManager.Init();
             }
 
             return aIManager;
@@ -47,9 +48,22 @@ namespace SP
             if(moneyManager == null)
             {
                 moneyManager = Resources.Load("MoneyManager") as MoneyManager;
+                moneyManager.Init();
             }
 
             return moneyManager;
+        }
+
+        static GameLoopManager gameLoopManager;
+        public static GameLoopManager GetGameLoopManager()
+        {
+            if(gameLoopManager == null)
+            {
+                gameLoopManager = Resources.Load("GameLoopManager") as GameLoopManager;
+                gameLoopManager.Init();
+            }
+
+            return gameLoopManager;
         }
     }
 }

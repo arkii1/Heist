@@ -8,9 +8,11 @@ namespace SP
     [CreateAssetMenu(menuName = "Managers/AIManager")]
     public class AIManager : ScriptableObject
     {
-        public KeyArea[] keyAreas;
+        public AreaOfInterest[] keyAreas;
+        public AreaOfInterest[] safeAreas;
 
         public List<StateManager> guards = new List<StateManager>();
+        public List<StateManager> npcs = new List<StateManager>();
 
         public void AddGuard(StateManager st)
         {
@@ -28,37 +30,78 @@ namespace SP
             guards.Remove(st);
         }
 
-        int counter = 0;
+        int keyAreaCounter = 0;
         public Transform GetKeyArea()
         {
             Transform retVal = null;
 
-            retVal = keyAreas[counter].transform.value;
-            keyAreas[counter].guardsAssigned++;
-            counter++;
+            retVal = keyAreas[keyAreaCounter].transform.value;
+            keyAreas[keyAreaCounter].humanoidsAssigned++;
+            keyAreaCounter++;
 
-            if (counter > keyAreas.Length - 1)
-                counter = 0;
+            if (keyAreaCounter > keyAreas.Length - 1)
+                keyAreaCounter = 0;
 
             return retVal;
         }
 
-        private void OnEnable()
+        public void AddNPC(StateManager st)
         {
-            counter = 0;
-            guards.Clear();
+            if (npcs.Contains(st))
+                return;
 
-            foreach (KeyArea key in keyAreas)
+            npcs.Add(st);
+        }
+
+        public void RemoveNPC(StateManager st)
+        {
+            if (!npcs.Contains(st))
+                return;
+
+            npcs.Remove(st);
+        }
+
+
+        int safeAreaCounter = 0;
+        public Transform SafeKeyArea()
+        {
+            Transform retVal = null;
+
+            retVal = safeAreas[safeAreaCounter].transform.value;
+            safeAreas[safeAreaCounter].humanoidsAssigned++;
+            safeAreaCounter++;
+
+            if (safeAreaCounter > safeAreas.Length - 1)
+                safeAreaCounter = 0;
+
+            return retVal;
+        }
+
+
+        public void Init()
+        {
+            keyAreaCounter = 0;
+            safeAreaCounter = 0;
+
+            guards.Clear();
+            npcs.Clear();
+
+            foreach (AreaOfInterest key in keyAreas)
             {
-                key.guardsAssigned = 0;
+                key.humanoidsAssigned = 0;
+            }
+
+            foreach (AreaOfInterest safe in safeAreas)
+            {
+                safe.humanoidsAssigned = 0;
             }
         }
     }
 
     [System.Serializable]
-    public class KeyArea
+    public class AreaOfInterest
     {
-        public int guardsAssigned;
+        public int humanoidsAssigned;
 
         public TransformVariable transform;
     }
