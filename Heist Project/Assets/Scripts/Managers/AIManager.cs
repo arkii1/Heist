@@ -91,10 +91,10 @@ namespace SP
                 key.humanoidsAssigned = 0;
             }
 
-            foreach (AreaOfInterest safe in safeAreas)
-            {
-                safe.humanoidsAssigned = 0;
-            }
+            //foreach (AreaOfInterest safe in safeAreas)
+            //{
+            //    safe.humanoidsAssigned = 0;
+            //}
         }
     }
 

@@ -7,7 +7,7 @@ namespace SP
     [CreateAssetMenu(menuName = "Managers/Game Loop Manager")]
     public class GameLoopManager : ScriptableObject
     {
-        GameLoopPhase phase;
+        public GameLoopPhase phase;
 
         public void Init()
         {
@@ -16,7 +16,7 @@ namespace SP
 
         public void ActivateAlarm()
         {
-            phase = GameLoopPhase.duringPhase;
+            phase = GameLoopPhase.alarmedPhase;
 
             //Make all NPCs hide/run
             //Call guards in AI manager
@@ -32,6 +32,6 @@ namespace SP
 
     public enum GameLoopPhase
     {
-        preAlarmPhase, duringPhase, escapedPhase
+        preAlarmPhase, alarmedPhase, escapedPhase
     }
 }
