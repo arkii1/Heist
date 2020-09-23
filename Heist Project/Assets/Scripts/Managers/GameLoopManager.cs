@@ -17,9 +17,6 @@ namespace SP
         public void ActivateAlarm()
         {
             phase = GameLoopPhase.alarmedPhase;
-
-            //Make all NPCs hide/run
-            //Call guards in AI manager
         }
 
         public void PlayerHasEscaped()
