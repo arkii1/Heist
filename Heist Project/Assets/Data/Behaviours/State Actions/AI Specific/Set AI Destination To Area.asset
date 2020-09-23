@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aacf8f8d0f60904faa928b9ae58fcf1, type: 3}
-  m_Name: Add Guard To AI Manager
+  m_Script: {fileID: 11500000, guid: 56c770d9425ca3e48a9c4e45c9e5f3cd, type: 3}
+  m_Name: Set AI Destination To Area
   m_EditorClassIdentifier: 

@@ -37,6 +37,9 @@ namespace SP
             state = st;
             anim = state.anim;
 
+            if (st.type == StateManagerType.npc)
+                return;
+
             if (shoulder == null)
                 shoulder = anim.GetBoneTransform(HumanBodyBones.RightShoulder).transform;
 
@@ -246,6 +249,9 @@ namespace SP
         private void OnAnimatorIK(int layerIndex)
         {
             if (state.isDead)
+                return;
+
+            if (state.type == StateManagerType.npc)
                 return;
 
             lookDir = state.movementValues.aimPosition - aimPivot.position;

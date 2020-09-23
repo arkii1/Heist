@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e09f12a9b8fb5e44eb81fa499afbecc4, type: 3}
   m_Name: NPC Alarmed
   m_EditorClassIdentifier: 
-  onFixed:
+  onFixed: []
+  onUpdate:
+  - {fileID: 11400000, guid: c39fb56e256a8754997e4590b3ce0ce1, type: 2}
+  - {fileID: 11400000, guid: 810c47ab37ad9d843a69ae4378fccaab, type: 2}
+  onEnter:
   - {fileID: 11400000, guid: 91da054b946469f40b184dac672f40c6, type: 2}
-  onUpdate: []
-  onEnter: []
   onExit: []
-  idCount: 0
-  transitions: []
+  idCount: 1
+  transitions:
+  - id: 0
+    condition: {fileID: 11400000, guid: 47e639aeaa32530478e193fe63a8a8dc, type: 2}
+    targetState: {fileID: 11400000, guid: e3dc347eb61605342b39b3a427d70d53, type: 2}
+    disable: 0

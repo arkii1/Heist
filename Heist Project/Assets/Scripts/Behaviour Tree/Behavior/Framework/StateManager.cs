@@ -166,7 +166,7 @@ namespace SP
 
     public enum StateManagerType
     {
-        player, guard
+        player, guard, npc
     }
 }
 

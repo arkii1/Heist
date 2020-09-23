@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58304ad1080eda9459eb1e6e30a81cde, type: 3}
-  m_Name: MoneyManager
+  m_Script: {fileID: 11500000, guid: 1aacf8f8d0f60904faa928b9ae58fcf1, type: 3}
+  m_Name: Add AI To AI Manager
   m_EditorClassIdentifier: 
-  currentMonies: 2147483647

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a571fc4f3d39446bc27ab59a023e24, type: 3}
   m_Name: Rotate To Face Camera
   m_EditorClassIdentifier: 
-  rotateSpeed: 8
+  rotateSpeed: 45

@@ -13,25 +13,28 @@ MonoBehaviour:
   m_Name: AIManager
   m_EditorClassIdentifier: 
   keyAreas:
-  - guardsAssigned: 3
+  - humanoidsAssigned: 0
     transform: {fileID: 11400000, guid: fc089ffb4895e1449adfda786dca9024, type: 2}
-  - guardsAssigned: 2
+  - humanoidsAssigned: 0
     transform: {fileID: 11400000, guid: ba2e8da446c13dc4099362cf351f79ec, type: 2}
-  - guardsAssigned: 2
+  - humanoidsAssigned: 0
     transform: {fileID: 11400000, guid: cdf379e41859fd042b84fcccf9c2267f, type: 2}
-  - guardsAssigned: 2
+  - humanoidsAssigned: 0
     transform: {fileID: 11400000, guid: 2b83deb8ea23bd7499dfa926c23c66b5, type: 2}
-  - guardsAssigned: 2
+  - humanoidsAssigned: 0
     transform: {fileID: 11400000, guid: 0be50a7853fa9fa4b81117fbfecc6e64, type: 2}
-  guards:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  safeAreas:
+  - humanoidsAssigned: 0
+    transform: {fileID: 11400000, guid: f79367aaa4003964fa51cf0eb0a28ba0, type: 2}
+  - humanoidsAssigned: 0
+    transform: {fileID: 11400000, guid: 8f2d5ba1141ed714197362c39fa9b687, type: 2}
+  - humanoidsAssigned: 0
+    transform: {fileID: 11400000, guid: 520b84d7dee3a09449a39c9c9352fa76, type: 2}
+  - humanoidsAssigned: 0
+    transform: {fileID: 11400000, guid: 7a3b31eaa720fa74d968e5ebcf3d6685, type: 2}
+  - humanoidsAssigned: 0
+    transform: {fileID: 11400000, guid: 2d893380d974c61499578f2a3467184e, type: 2}
+  - humanoidsAssigned: 0
+    transform: {fileID: 11400000, guid: b4110aea2fbf0eb4e9fa8a6be37f2314, type: 2}
+  guards: []
+  npcs: []

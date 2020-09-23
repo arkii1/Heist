@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56c770d9425ca3e48a9c4e45c9e5f3cd, type: 3}
-  m_Name: Set Guard Destination To Key Area
+  m_Script: {fileID: 11500000, guid: 99b9e5a838c3d6749b85a1ab19979326, type: 3}
+  m_Name: PortalNode
   m_EditorClassIdentifier: 

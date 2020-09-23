@@ -62,17 +62,19 @@ namespace SP
         }
 
 
-        int safeAreaCounter = 0;
-        public Transform SafeKeyArea()
+        public Transform GetSafeArea(StateManager state)
         {
-            Transform retVal = null;
+            Transform retVal = safeAreas[0].transform.value;
 
-            retVal = safeAreas[safeAreaCounter].transform.value;
-            safeAreas[safeAreaCounter].humanoidsAssigned++;
-            safeAreaCounter++;
-
-            if (safeAreaCounter > safeAreas.Length - 1)
-                safeAreaCounter = 0;
+            for (int i = 1; i < safeAreas.Length; i++)
+            {
+                if (Vector3.Distance(safeAreas[i].transform.value.position, state.transform.position) < Vector3.Distance(retVal.position, state.transform.position))
+                {
+                    retVal = safeAreas[i].transform.value;
+                }
+            }
+            
+            //humanoids assigned isn't really important for the npcs so i will leave it for now
 
             return retVal;
         }
@@ -81,7 +83,6 @@ namespace SP
         public void Init()
         {
             keyAreaCounter = 0;
-            safeAreaCounter = 0;
 
             guards.Clear();
             npcs.Clear();
@@ -91,10 +92,10 @@ namespace SP
                 key.humanoidsAssigned = 0;
             }
 
-            //foreach (AreaOfInterest safe in safeAreas)
-            //{
-            //    safe.humanoidsAssigned = 0;
-            //}
+            foreach (AreaOfInterest safe in safeAreas)
+            {
+                safe.humanoidsAssigned = 0;
+            }
         }
     }
 

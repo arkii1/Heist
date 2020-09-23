@@ -15,10 +15,6 @@ public class StateReloadAnimationBehaviour : StateMachineBehaviour
                 animator.GetComponent<StateManager>().isPerformingAction = true;
                 break;
             case StateManagerType.guard:
-
-
-
-
                 break;
             default:
                 break;

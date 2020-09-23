@@ -13,12 +13,18 @@ MonoBehaviour:
   m_Name: NPC Unalarmed
   m_EditorClassIdentifier: 
   onFixed: []
-  onUpdate: []
-  onEnter: []
+  onUpdate:
+  - {fileID: 11400000, guid: c39fb56e256a8754997e4590b3ce0ce1, type: 2}
+  onEnter:
+  - {fileID: 11400000, guid: f98a4f168b60c3940a468daf90f1941b, type: 2}
   onExit: []
-  idCount: 1
+  idCount: 2
   transitions:
   - id: 0
     condition: {fileID: 11400000, guid: 7a614a730da31854fa067732b64b961e, type: 2}
     targetState: {fileID: 11400000, guid: fba48c6e9e41dfe47ae38974bb4bdd0c, type: 2}
+    disable: 0
+  - id: 1
+    condition: {fileID: 11400000, guid: 47e639aeaa32530478e193fe63a8a8dc, type: 2}
+    targetState: {fileID: 11400000, guid: e3dc347eb61605342b39b3a427d70d53, type: 2}
     disable: 0

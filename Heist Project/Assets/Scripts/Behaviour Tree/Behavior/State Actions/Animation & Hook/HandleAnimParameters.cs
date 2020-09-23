@@ -15,6 +15,12 @@ namespace SP
                     state.anim.SetFloat("horizontal", state.movementValues.horizontal, 0.2f, state.delta);
                     state.anim.SetFloat("vertical", state.movementValues.vertical, 0.02f, state.delta);
                     state.anim.SetFloat("moveAmount", state.movementValues.moveAmount, 0.02f, state.delta);
+
+                    state.anim.SetBool("isAiming", state.isAiming);
+                    state.anim.SetBool("isSprinting", state.isSprinting);
+                    state.anim.SetBool("isCrouching", state.isCrouching);
+                    state.anim.SetBool("isInteracting", state.isInteracting);
+                    state.anim.SetInteger("consecutiveShots", state.inventory.curWeapon.weaponHook.consecutiveShots);
                     break;
                 case StateManagerType.guard:
                     state.anim.SetFloat("moveAmount", state.agent.velocity.magnitude / state.agent.speed);
@@ -22,17 +28,20 @@ namespace SP
                     Vector3 localVel = state.mTransform.InverseTransformVector(state.agent.velocity);
                     state.anim.SetFloat("horizontal", localVel.x / state.agent.speed);
                     state.anim.SetFloat("vertical", localVel.z / state.agent.speed);
+
+                    state.anim.SetBool("isAiming", state.isAiming);
+                    state.anim.SetBool("isSprinting", state.isSprinting);
+                    state.anim.SetBool("isCrouching", state.isCrouching);
+                    state.anim.SetBool("isInteracting", state.isInteracting);
+                    state.anim.SetInteger("consecutiveShots", state.inventory.curWeapon.weaponHook.consecutiveShots);
+                    break;
+                case StateManagerType.npc:
+                    state.anim.SetFloat("moveAmount", state.agent.velocity.magnitude / state.agent.speed);
+                    state.anim.SetBool("isAlarmed", GameManager.GetGameLoopManager().phase != GameLoopPhase.preAlarmPhase);
                     break;
                 default:
                     break;
             }
-
-            state.anim.SetBool("isAiming", state.isAiming);
-            state.anim.SetBool("isSprinting", state.isSprinting);
-            state.anim.SetBool("isCrouching", state.isCrouching);
-            state.anim.SetBool("isInteracting", state.isInteracting);
-
-            state.anim.SetInteger("consecutiveShots", state.inventory.curWeapon.weaponHook.consecutiveShots);
         }
     }
 }
