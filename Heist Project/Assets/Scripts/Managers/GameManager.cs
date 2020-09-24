@@ -1,11 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace SP
 {
     public static class GameManager
     {
+
+        public static void LoadScene(int sceneToLoad)
+        {
+            SceneManager.LoadScene(sceneToLoad);
+
+            if(sceneToLoad == 0) //our gameplay scene
+            {
+                objectPooler.Init();
+                resourcesManager.Init();
+                aIManager.Init();
+                moneyManager.Init();
+                gameLoopManager.Init();
+            }
+        }
+
         static ObjectPooler objectPooler;
         public static ObjectPooler GetObjectPooler()
         {
