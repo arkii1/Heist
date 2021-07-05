@@ -22,6 +22,11 @@ namespace SP.UI
 
         private void Start()
         {
+            Init();
+        }
+
+        public void Init()
+        {
             for (int i = 0; i < elements.Count; i++)
             {
                 elements[i].Init();

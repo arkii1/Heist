@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using SP.UI;
 
 namespace SP
 {
@@ -14,11 +15,16 @@ namespace SP
 
             if(sceneToLoad == 0) //our gameplay scene
             {
+                Debug.Log("Scene loaded");
+
                 objectPooler.Init();
                 resourcesManager.Init();
                 aIManager.Init();
                 moneyManager.Init();
                 gameLoopManager.Init();
+
+                if(GameObject.FindObjectOfType<UIUpdater>() != null)
+                    GameObject.FindObjectOfType<UIUpdater>().Init();
             }
         }
 

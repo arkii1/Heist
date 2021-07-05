@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: AIManager
   m_EditorClassIdentifier: 
   keyAreas:
-  - humanoidsAssigned: 0
+  - humanoidsAssigned: 2
     transform: {fileID: 11400000, guid: fc089ffb4895e1449adfda786dca9024, type: 2}
-  - humanoidsAssigned: 0
+  - humanoidsAssigned: 1
     transform: {fileID: 11400000, guid: ba2e8da446c13dc4099362cf351f79ec, type: 2}
-  - humanoidsAssigned: 0
+  - humanoidsAssigned: 1
     transform: {fileID: 11400000, guid: cdf379e41859fd042b84fcccf9c2267f, type: 2}
-  - humanoidsAssigned: 0
+  - humanoidsAssigned: 1
     transform: {fileID: 11400000, guid: 2b83deb8ea23bd7499dfa926c23c66b5, type: 2}
-  - humanoidsAssigned: 0
+  - humanoidsAssigned: 1
     transform: {fileID: 11400000, guid: 0be50a7853fa9fa4b81117fbfecc6e64, type: 2}
   safeAreas:
   - humanoidsAssigned: 0
@@ -36,5 +36,9 @@ MonoBehaviour:
     transform: {fileID: 11400000, guid: 2d893380d974c61499578f2a3467184e, type: 2}
   - humanoidsAssigned: 0
     transform: {fileID: 11400000, guid: b4110aea2fbf0eb4e9fa8a6be37f2314, type: 2}
-  guards: []
+  guards:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   npcs: []

@@ -10,8 +10,18 @@ namespace SP
         public List<Item> allItems = new List<Item>();
         Dictionary<string, Item> itemDict = new Dictionary<string, Item>();
 
+        bool alreadyInitted = false;
+
+        private void OnDisable()
+        {
+            alreadyInitted = false;
+        }
+
         public void Init()
         {
+            if (alreadyInitted)
+                return;
+
             for (int i = 0; i < allItems.Count; i++)
             {
                 if (!itemDict.ContainsKey(allItems[i].name))
@@ -23,6 +33,8 @@ namespace SP
                     Debug.Log("There are two items named " + allItems[i].name + "! This is not allowed.");
                 }
             }
+
+            alreadyInitted = true;
         }
 
         public Item GetItemInstance(string targetID)

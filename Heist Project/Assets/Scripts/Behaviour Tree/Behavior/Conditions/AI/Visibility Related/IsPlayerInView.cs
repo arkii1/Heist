@@ -17,7 +17,11 @@ namespace SP
         {
             bool retVal = false;
 
+            if(!GameObject.FindGameObjectWithTag("Player"))
+                return false;
+
             GameObject player = GameObject.FindGameObjectWithTag("Player");
+
             
             if(Vector3.Distance(state.mTransform.position, player.transform.position) <= maxRange)
             {

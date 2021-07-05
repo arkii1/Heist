@@ -9,17 +9,33 @@ namespace SP
     {
         public List<Pool> pool = new List<Pool>();
         Dictionary<string, int> obj_dict = new Dictionary<string, int>();
-        GameObject poolParent;
+        public GameObject poolParent;
+
+        bool alreadyInitted = false;
+
+        private void OnDisable()
+        {
+            alreadyInitted = false;
+        }
 
 
         public void Init()
         {
+            if (alreadyInitted)
+            {
+                return;
+            }
+
+
             if (poolParent)
                 Destroy(poolParent);
 
             poolParent = new GameObject();
             poolParent.name = "Object Pool";
+            DontDestroyOnLoad(poolParent);
+
             obj_dict.Clear();
+
 
             for (int i = 0; i < pool.Count; i++)
             {
@@ -39,6 +55,8 @@ namespace SP
                     obj_dict.Add(pool[i].prefab.name, i);
                 }
             }
+
+            alreadyInitted = true;
         }
 
         public GameObject RequestObject(string id)
